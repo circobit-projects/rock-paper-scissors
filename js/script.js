@@ -27,3 +27,46 @@ function getComputerChoice() {
 // Declare players' score variables
 let humanScore = 0;
 let computerScore = 0;
+
+
+// Logic to play one round
+function playRound(humanChoice, computerChoice) {
+	// If human picks up Rock
+	if (humanChoice === "rock") {
+		if (computerChoice === "scissors") {
+			console.log("You win! Rock beats Scissors");
+			humanScore++;
+		} else if (computerChoice === "paper") {
+			console.log("You lose! Paper beats Rock");
+			computerScore++;
+		} else {
+			console.log("It's a tie! Rock cannot beat Rock");
+		};
+	};
+
+	// If human picks up Paper
+	if (humanChoice === "paper") {
+		if (computerChoice === "rock") {
+			console.log("You win! Paper beats Rock");
+			humanScore++;
+		} else if (computerChoice === "scissors") {
+			console.log("You lose! Scissors beats Paper");
+			computerScore++;
+		} else {
+			console.log("It's a tie! Paper cannot beat Paper");
+		};
+	};
+
+	// If human picks up Scissors
+	if (humanChoice === "scissors") {
+		if (computerChoice === "paper") {
+			console.log("You win! Scissors beats Paper");
+			humanScore++;
+		} else if (computerChoice === "rock") {
+			console.log("You lose! Rock beats Scissors");
+			computerScore++;
+		} else {
+			console.log("It's a tie! Scissors cannot beat Scissors");
+		};
+	};
+};
