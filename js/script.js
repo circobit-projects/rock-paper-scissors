@@ -70,3 +70,32 @@ function playRound(humanChoice, computerChoice) {
 		};
 	};
 };
+
+
+// Logic to play the game in a desired number of rounds
+function playGame() {
+	// Set rounds to 5
+	rounds = 5
+
+	while (rounds > 0) {
+		// Store human and computer choices
+		const humanSelection = getHumanChoice();
+		const computerSelection = getComputerChoice();
+		// Print choices
+		console.log("╔ Your selection: " + humanSelection);
+		console.log("╚ Computer selection: " + computerSelection);
+
+		playRound(humanSelection, computerSelection);
+		rounds--;
+	};
+
+	if (humanScore > computerScore) {
+		console.log(`» FINAL RESULTS » Congratulations! You win. Your score: ${humanScore}. Computer score: ${computerScore}.`)
+	} else {
+		console.log(`» FINAL RESULTS » You lost! Computer score: ${computerScore}. Your score: ${humanScore}.`)
+	};
+};
+
+
+// Play Game
+playGame();
