@@ -14,3 +14,16 @@ function getHumanChoice() {
 		return inputLow;
 	}
 };
+
+
+// Store and return computer choice:
+function getComputerChoice() {
+	let objects = [ "rock", "paper", "scissors" ];
+	let randomNum = Math.floor(Math.random() * objects.length);
+	return objects[randomNum];
+};
+
+
+// Declare players' score variables
+let humanScore = 0;
+let computerScore = 0;
