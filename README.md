@@ -23,4 +23,4 @@ Duration: Each game consist of five rounds.
 
 ## Screenshots
 
-![Screenshot of a browser console showing a completed game](./images/1-console-game-complete.png)
+![Screenshot of a browser console showing a completed game](./images/readme/1-console-game-complete.png)
