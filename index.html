@@ -4,9 +4,72 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rock Paper Scissors</title>
-	<script src="js/script.js"></script>
+	<script src="js/script.js" defer></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-	
+	<div class="divBody">
+		<div class="titleAndScoreContainer">
+			<div class="titleContainer">
+				<p>RPS by</p>
+				<p>circobit</p>
+			</div>
+			<div class="scoreContainer">
+				<div class="scoreTitle">
+					<p>SCORE</p>
+				</div>
+				<div class="scorePoints">
+					<div class="scoreUser">
+						<p>User: <span id="userScore">0</span></p>
+					</div>
+					<div class="scoreComputer">
+						<p>Computer: <span id="computerScore">0</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="userButtonsContainer">
+			<div class="divButton">
+				<button class="buttonRock">
+					<div class="divImgRock">
+						<img class="imgRock" src="./images/game-items/rock.png">
+					</div>
+					<div class="buttonText">Rock</div>
+				</button>
+			</div>
+			<div class="divButton">
+				<button class="buttonPaper">
+					<div class="divImgPaper">
+						<img class="imgPaper" src="./images/game-items/paper.png">
+					</div>
+					<div class="buttonText">Paper</div>
+				</button>
+			</div>
+			<div class="divButton">
+				<button class="buttonScissors">
+					<div class="divImgScissors">
+						<img class="imgScissors" src="./images/game-items/scissors.png">
+					</div>
+					<div class="buttonText">Scissors</div>
+				</button>
+			</div>
+		</div>
+		<div class="footerContainer">
+			<div class="computerPick">
+				<p>Computer's Pick:</p>
+				<p id="computersPick">-</p>
+			</div>
+			<div class="roundResult">
+				<p>Round Result:</p>
+				<p id="roundResult"></p>
+			</div>
+		</div>
+		<!-- <div class="finalResults">
+			<p>Final Results: <span id="finalResults"></span></p>
+		</div> -->
+	</div>
 </body>
 </html>
