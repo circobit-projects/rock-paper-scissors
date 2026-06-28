@@ -1,0 +1,107 @@
+body {
+	font-family: "Press Start 2P", "Roboto";
+}
+
+.divBody {
+	max-width: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+img {
+	max-width: 10rem;
+}
+
+.divButton {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0%;
+	min-width: 0;
+}
+
+button {
+	padding: 2.5rem;
+	border: 10px solid rgb(67, 67, 67);
+	font-family: "Press Start 2P", "Roboto";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 15px;
+}
+
+.userButtonsContainer {
+	display: flex;
+	gap: 2rem;
+	background: rgb(246, 170, 39);
+	padding: 2rem;
+	border: 10px solid grey;
+	border-radius: 15px;
+}
+
+.buttonText {
+	font-weight: 700;
+	font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.titleContainer {
+	text-align: center;
+	background: rgb(226, 138, 229);
+	border: 10px solid grey;
+	border-radius: 15px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.scoreContainer{
+	text-align: center;
+	background: rgb(128, 241, 128);
+	border: 10px solid grey;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+
+.scorePoints {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footerContainer {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-around;
+}
+
+.computerPick {
+	border: 10px solid grey;
+	border-radius: 15px;
+	background-color: rgb(95, 196, 196);
+}
+
+.roundResult {
+	border: 10px solid grey;
+	border-radius: 15px;
+	background-color: rgb(95, 196, 196);
+}
+
+.computerPick,
+.roundResult {
+	flex: 1;
+	text-align: center;
+}
+
+.titleAndScoreContainer {
+	display: flex;
+	gap: 1rem;
+}
+
+.finalResults {
+	border: 10px solid grey;
+	border-radius: 15px;
+	text-align: center;
+	background-color: rgb(222, 87, 87);
+}

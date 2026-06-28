@@ -1,12 +1,11 @@
 # Rock-Paper-Scissors
 
-This project is part of the Foundations course from The Odin Project. The objective is to build the logic of the Rock-Paper-Scissors game in JavaScript to be ran in the console.
-
-Duration: Each game consist of five rounds.
+This project is part of the Foundations course from The Odin Project. The objective is to build the logic of the Rock-Paper-Scissors game with UI interface.
 
 ## Built with
 
 - HTML
+- CSS
 - JavaScript
 
 ## Demo
@@ -16,11 +15,9 @@ Duration: Each game consist of five rounds.
 ## How to use
 
 1. Open the `index.html` file in your browser.
-2. Open the console in your browser: 
-    - Windows / Linux: `Ctrl + Shift + J` 
-    - macOS: `Cmd + Option + J`
-3. Type names of the objects as requested by the prompt
+2. Click on the object you want to pick (Rock, Paper or Scissors)
+3. If you want to start the game from scratch, reload the page.
 
 ## Screenshots
 
-![Screenshot of a browser console showing a completed game](./images/1-console-game-complete.png)
+![Screenshot of a browser console showing a completed game](./images/readme/1-interface.png)
